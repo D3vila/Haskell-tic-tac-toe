@@ -3,6 +3,11 @@
 This week-long project was to create a game of Tic-Tac-Toe in the Command Line interface using Haskell. 
 During this project I learned Haskell functional programming language in a week and attempted to do a quick turn around. 
 
+- to run this project: 
+- Clone it
+- open terminal and cd into file
+- type ghci tic-tac-toe.hs to compile file
+- 
 
 https://www.youtube.com/watch?v=IyFj7ox5IQ4 installation on ubuntu/WSL
 
