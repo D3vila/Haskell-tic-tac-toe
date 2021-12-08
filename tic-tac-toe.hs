@@ -1,3 +1,4 @@
+import qualified GHC.Tuple as Character
 
 main :: IO()
 main = undefined
@@ -24,6 +25,8 @@ instance Show Board
 -- this function takes the list and splits it at the nth spot and creates a left and right side
 -- then it creates the right side where it is split at and the left drops the tail and returns the rest
 -- returning two list with the nth removed from the list.
+-- finally had to make a function that would take a list, index, and player character (X or O). AND join them all together with the player Character.
+-- There was a lot of trial and error. This part took a while to make sure sytax was right and trying to get the result I wanted. 
 
 removeEle :: Int -> [a] -> ([a], [a])
 removeEle index list = (left, right)
