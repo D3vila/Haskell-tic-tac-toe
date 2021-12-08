@@ -1,4 +1,4 @@
-import qualified GHC.Tuple as Character
+
 
 main :: IO()
 main = undefined
@@ -22,11 +22,11 @@ instance Show Board
 -- since I can't change the original list I can make new board with every list updated but took me a while to figure out how I was going to
 -- do that in Haskell. from here I searched how to replace individual list elements in haskell and on stack overflow it gave me an idea how I should
 -- approach this. https://stackoverflow.com/questions/5852722/replace-individual-list-elements-in-haskell
--- this function takes the list and splits it at the nth spot and creates a left and right side
+-- this helper function takes the list and splits it at the nth spot and creates a left and right side
 -- then it creates the right side where it is split at and the left drops the tail and returns the rest
 -- returning two list with the nth removed from the list.
 -- finally had to make a function that would take a list, index, and player character (X or O). AND join them all together with the player Character.
--- There was a lot of trial and error. This part took a while to make sure sytax was right and trying to get the result I wanted. 
+-- There was a lot of trial and error. This part took a while to make sure sytax was right and trying to get the result I wanted.
 
 removeEle :: Int -> [a] -> ([a], [a])
 removeEle index list = (left, right)
@@ -39,4 +39,4 @@ insertChar list idx c = left ++ [c] ++ right
     where (left, right) = removeEle idx list
 
 startTicTacToe :: [Board] -> Char -> IO ()
-startTicTacToe = undefined
+startTicTacToe board playerMark = undefined
