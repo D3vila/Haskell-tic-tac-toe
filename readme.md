@@ -16,4 +16,5 @@ to test functions I have completed:
 - type ```ghci tic-tac-toe.hs``` in the terminal
 - once ```[1 of 1] Compiling Main             ( tic-tac-toe.hs, interpreted )
 Ok, one module loaded.
-*Main> ```
+*Main> ``` appears you can type the functions with the parameters and test it
+
