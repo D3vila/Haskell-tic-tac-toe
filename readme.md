@@ -11,9 +11,9 @@ This file is where I have my code and how I attempted to make the game. I feel l
 
 to test functions I have completed:
 
-[] clone project
-[] cd into file
-[] type ```ghci tic-tac-toe.hs``` in the terminal
-[] once ```[1 of 1] Compiling Main             ( tic-tac-toe.hs, interpreted )
+[ ] clone project
+[ ] cd into file
+[ ] type ```ghci tic-tac-toe.hs``` in the terminal
+[ ] once ```[1 of 1] Compiling Main             ( tic-tac-toe.hs, interpreted )
 Ok, one module loaded.
 *Main> ```
