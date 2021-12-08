@@ -22,7 +22,7 @@ instance Show Board
 -- do that in Haskell. from here I searched how to replace individual list elements in haskell and on stack overflow it gave me an idea how I should
 -- approach this. https://stackoverflow.com/questions/5852722/replace-individual-list-elements-in-haskell
 -- this function takes the list and splits it at the nth spot and creates a left and right side
--- then it creates the right side where it is split at and the left is drops the tail and returns it all
+-- then it creates the right side where it is split at and the left drops the tail and returns the rest
 -- returning two list with the nth removed from the list.
 
 removeEle :: Int -> [a] -> ([a], [a])
@@ -31,7 +31,9 @@ removeEle index list = (left, right)
         (s, right) = splitAt index list
         left = init s
 
-
+insertChar :: [a] -> Int -> a -> [a]
+insertChar list idx c = left ++ [c] ++ right
+    where (left, right) = removeEle idx list
 
 startTicTacToe :: [Board] -> Char -> IO ()
 startTicTacToe = undefined
