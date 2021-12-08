@@ -3,8 +3,10 @@
 main :: IO()
 main = undefined
 
+startTicTacToe :: [Board] -> Char -> IO ()
+startTicTacToe  = undefined
 -- here I created a data type that describes a board spot to be spot number or player character with
--- a typeclass of Show(can be converted to string) and Eq(to compare two values of this data type)
+-- a typeclass of Eq(to compare two values of this data type)
 -- this will allow me to make different states of the gameboard [Spot 1, Spot 2, Spot 3, Spot 4, Spot 5, Spot 6, Spot 7, Spot 8, Spot 9]
 -- to [Spot 1, Spot 2, Spot 3, Spot 4, Spot 5, Spot 6, Spot 7, Spot 8, Player 'X'] and they are not the same
 data Board = Spot Int | Player Char deriving Eq
@@ -38,5 +40,16 @@ insertChar :: [a] -> Int -> a -> [a]
 insertChar list idx c = left ++ [c] ++ right
     where (left, right) = removeEle idx list
 
-startTicTacToe :: [Board] -> Char -> IO ()
-startTicTacToe  = undefined
+-- next thing that popped in my head was to make sure we can see a game board and how to display it. I wanted to just print out each row and created a function
+-- that takes in 3 parameters and displays them. At first I was getting in the terminal ""1X3\n-----------\n456\n-----------\n78[O]"" when I entered showBoard [Spot 1, Player 'X', Spot 3, Spot 4, Spot 5, Spot 6, Spot 7, Spot 8, Player 'O'].
+-- -- I didn't know why I was getting a square bracket on my last element.
+-- showBoard (a:b:c:d:e:f:g:h:i) = (show a) ++ (show b) ++ (show c) ++ "n" ++ (show d) ++ (show e) ++ (show f) ++ "n" ++ (show g) ++ (show h) ++ (show i)
+-- Showing the whole board at once did not work as I was trying to put a 3 by 3 shape in the terminal so I had to create each row and have a top middle and bottom section.
+-- this section was a trial an error part with was a headache but I felt my brain grow and I accidently stubbled across why I was getting a square bracket end where I had
+-- to add another element as a parameter and saw it on stack overflow.
+showBoardRow (a:b:c:ds) = (show a) ++ (show b) ++ (show c)
+
+
+-- this is as far as I got in the practice. My next step was to try and map my rows to display the 3 by 3 board. I was looking at
+-- intercalate to proceed to do this and trial an error to see if I could get what I wanted.
+-- https://hackage.haskell.org/package/base-4.16.0.0/docs/Data-List.html#v:intercalate
