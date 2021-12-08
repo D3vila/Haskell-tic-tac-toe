@@ -39,4 +39,4 @@ insertChar list idx c = left ++ [c] ++ right
     where (left, right) = removeEle idx list
 
 startTicTacToe :: [Board] -> Char -> IO ()
-startTicTacToe board playerMark = undefined
+startTicTacToe  = undefined
