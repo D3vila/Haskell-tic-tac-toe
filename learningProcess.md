@@ -14,7 +14,9 @@ https://wiki.haskell.org/Haskell_in_5_steps first program to run in vscode
 
 ## Third step
 
-Then I stubbled onto Learn you a Haskell website which a book but they have it available online for free for you to follow taking baby steps. I actually enjoyed coding along and practicing different functions, list, etc. I had 1 week to go through the book which wasn't enough time for me to fully grasp the language but I did my best and tried to begin coding the tic tac toe project and refer to the book or online if I hit any speed bumps along the way.
+Then I stubbled onto Learn you a Haskell website which a book but they have it available online for free for you to follow taking baby steps. I actually enjoyed coding along and practicing different functions, list, etc. I had 1 week to go through the book which wasn't enough time for me to fully grasp the language but I did my best and tried to begin coding the tic tac toe project and refer to the book or online if I hit any speed bumps along the way. This was the github repo where I was practicing Haskell.
+
+https://github.com/D3vila/Haskell_practice
 
 http://learnyouahaskell.com/chapters
 
