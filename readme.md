@@ -6,7 +6,7 @@ During this project, I attempted to learned Haskell functional programming langu
 ## [learningProcess.md](https://github.com/D3vila/Haskell-tic-tac-toe/blob/main/learningProcess.md)
 This file has all my thoughts and process on how I attempted to learn Haskell in a week and what I used as resources to get me there.
 
-## tic-tac-toe.hs
+## [tic-tac-toe.hs](https://github.com/D3vila/Haskell-tic-tac-toe/blob/main/tic-tac-toe.hs)
 This file is where I have my code and how I attempted to make the game. I feel like I gave it my best shot to and there was success with failures and I learned alot from where I started and want to continue to work on it in the future to make sure I does work one day with some future implementation.
 
 to test functions I have completed:
