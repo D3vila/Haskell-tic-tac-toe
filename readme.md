@@ -3,7 +3,7 @@
 This project was to create a game of Tic-Tac-Toe in the Command Line interface using Haskell.
 During this project, I attempted to learned Haskell functional programming language in a week and attempted to do a quick turn around. It will be a work in progress to complete it since I have never heard of Haskell but will attempt to switch gears with my brain to understand functional programming.
 
-## learningProcess.md
+## [learningProcess.md](https://github.com/D3vila/Haskell-tic-tac-toe/blob/main/learningProcess.md)
 This file has all my thoughts and process on how I attempted to learn Haskell in a week and what I used as resources to get me there.
 
 ## tic-tac-toe.hs
